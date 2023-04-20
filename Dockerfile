@@ -17,3 +17,5 @@ RUN apt-get update && apt-get install -y wget unzip qrencode iproute2 systemctl 
     chmod -v 755 xray entrypoint.sh
 
 ENTRYPOINT ["./entrypoint.sh"]
+CMD ["tail", "-f","/dev/null"]
+
